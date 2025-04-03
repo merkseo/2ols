@@ -1,0 +1,356 @@
+html
+/* Tools Wrapper */
+.tools-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f6f5;
+}
+
+/* Header */
+.site-header {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e8ecef;
+    margin-bottom: 30px;
+}
+
+.site-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.site-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tool-nav {
+    list-style: none;
+}
+
+.tool-nav li {
+    margin-bottom: 15px;
+}
+
+.tool-nav a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.tool-nav a:hover {
+    color: #0056b3;
+}
+
+/* Tools Content */
+.tools-content {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tool-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.tool-card i {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.tool-card h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tool-card p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tool-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.tool-btn:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+.site-footer {
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #e8ecef;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .tools-content {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .site-header h1 {
+        font-size: 2em;
+    }
+
+    .site-header p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-card {
+        padding: 15px;
+    }
+
+    .tool-card i {
+        font-size: 2em;
+    }
+
+    .tool-card h2 {
+        font-size: 1.2em;
+    }
+
+    .tool-btn {
+        padding: 8px 15px;
+    }
+}
+
+Css
+
+/* Tools Wrapper */
+.tools-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f6f5;
+}
+
+/* Header */
+.site-header {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e8ecef;
+    margin-bottom: 30px;
+}
+
+.site-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.site-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tool-nav {
+    list-style: none;
+}
+
+.tool-nav li {
+    margin-bottom: 15px;
+}
+
+.tool-nav a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.tool-nav a:hover {
+    color: #0056b3;
+}
+
+/* Tools Content */
+.tools-content {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tool-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.tool-card i {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.tool-card h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tool-card p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tool-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.tool-btn:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+.site-footer {
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #e8ecef;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .tools-content {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .site-header h1 {
+        font-size: 2em;
+    }
+
+    .site-header p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-card {
+        padding: 15px;
+    }
+
+    .tool-card i {
+        font-size: 2em;
+    }
+
+    .tool-card h2 {
+        font-size: 1.2em;
+    }
+
+    .tool-btn {
+        padding: 8px 15px;
+    }
+}
